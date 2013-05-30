@@ -1,0 +1,28 @@
+{
+	"cmd": ["vlt", "ci", "--force", "${file_name}"],
+	"working_dir": "${file_path}",
+
+	"variants":
+	[
+		{
+			"name": "vlt:update",
+			"cmd": ["vlt", "up", "${file_name}"]
+		},
+		{
+			"name": "vlt:status",
+			"cmd": ["vlt", "st", "${file_name}"]
+		},
+		{
+			"name": "vlt:delete",
+			"cmd": ["vlt", "del", "${file_name}"]
+		},
+		{
+			"name": "vlt:add",
+			"cmd": ["vlt", "add", "${file_name}"]
+		},
+		{
+			"name": "vlt:diff",
+			"cmd": ["vlt", "di", "${file_name}"]
+		}
+	]
+}
